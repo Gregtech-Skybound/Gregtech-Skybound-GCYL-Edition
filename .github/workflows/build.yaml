@@ -1,6 +1,9 @@
 name: Build
 
 on: [push]
+permissions:
+     actions: read
+     security-events: write
 
 jobs:
   build-dev:
