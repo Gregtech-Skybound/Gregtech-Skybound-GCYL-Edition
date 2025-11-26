@@ -1,0 +1,46 @@
+{
+  "ore:cobblestone": {
+    "fluid": "lava",
+    "amount": 250
+  },
+  "ore:stoneGranite": {
+	"fluid": "lava",
+	"amount": 500
+  },
+  "ore:stoneDiorite": {
+	"fluid": "lava",
+	"amount": 250
+  },
+  "ore:stoneAndesite": {
+	"fluid": "lava",
+	"amount": 250
+  },
+  "ore:stoneBasalt": {
+	"fluid": "lava",
+    "amount": 500                             
+  },
+  "ore:stoneGraniteBlack": {
+	"fluid": "lava",
+	"amount": 500
+  },
+  "ore:stoneGraniteRed": {
+	"fluid": "lava",
+	"amount": 500
+  },
+  "gregtech:stone_cobble:3": {
+	"fluid": "lava",
+	"amount": 500
+  },
+  "gregtech:stone_cobble:0": {
+	"fluid": "lava",
+	"amount": 500
+  },
+  "gregtech:stone_cobble:1": {
+	"fluid": "lava",
+	"amount": 500
+  },
+  "gregtech:stone_cobble:2": {
+	"fluid": "lava",
+	"amount": 250
+  }
+}

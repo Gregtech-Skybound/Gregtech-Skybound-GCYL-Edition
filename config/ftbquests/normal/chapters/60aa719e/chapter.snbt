@@ -1,0 +1,7 @@
+{
+	title: "Age 1 - Steam Age",
+	icon: "gregtech:mte 1 1",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

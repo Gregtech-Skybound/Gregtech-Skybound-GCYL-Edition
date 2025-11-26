@@ -1,0 +1,82 @@
+{
+	"curse":
+	[
+		{
+    			"addonId": 1061104,
+    			"fileId": 5520060,
+    			"folder": "resourcepacks",
+    			"installationPolicy": {
+       				  "continueOnFailedDownload": false,
+       				  "optionalKey": "$",
+       			          "selectedByDefault": false,
+       			          "name": "Chisel Modern",
+       			          "description": "(Optional) Modern textures for Chisel"
+    			},
+    			"metadata": {
+        			 "side": "CLIENT"
+    			}
+		},
+		{
+			"addonId": 300317,
+			"fileId": 5756264,
+    			"folder": "resourcepacks",
+    			"installationPolicy": {
+       				  "continueOnFailedDownload": false,
+       				  "optionalKey": "$",
+       			          "selectedByDefault": false,
+       			          "name": "Modernity",
+       			          "description": "(Optional) Backport of the modern textures from newer versions"
+    			},
+    			"metadata": {
+        			 "side": "CLIENT"
+    			}
+		},
+		{
+			"addonId": 1088911,
+			"fileId": 5758708,
+    			"folder": "resourcepacks",
+    			"installationPolicy": {
+       				  "continueOnFailedDownload": false,
+       				  "optionalKey": "$",
+       			          "selectedByDefault": false,
+       			          "name": "Modernity Adjunct",
+       			          "description": "(Optional) Modern textures for all other mods"
+    			},
+    			"metadata": {
+        			 "side": "CLIENT"
+    			}
+		},
+		{
+			"addonId": 616555,
+			"fileId": 3765851,
+    			"folder": "resourcepacks",
+    			"installationPolicy": {
+       				  "continueOnFailedDownload": false,
+       				  "optionalKey": "$",
+       			          "selectedByDefault": false,
+       			          "name": "Smooth Font",
+       			          "description": "(Optional) Replaces the standard Minecraft Font with an smoother one"
+    			},
+    			"metadata": {
+        			 "side": "CLIENT"
+    			}
+		}
+	],
+        "url":
+        [
+		{
+			"url": "https://cdn.modrinth.com/data/ZemCyvLM/versions/VkAoaulJ/GregTech%20Refreshed%20v0.7%20%5B1.12%5D.zip",
+			"folder": "resourcepacks",
+    			"installationPolicy": {
+       				  "continueOnFailedDownload": false,
+       				  "optionalKey": "$",
+       			          "selectedByDefault": false,
+       			          "name": "Gregtech Refreshed",
+       			          "description": "(Optional) What GTCEu uses in newer versions"
+    			},
+    			"metadata": {
+        			 "side": "CLIENT"
+    			}
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	title: "IV",
+	icon: "gregtech:mte 1 10008",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

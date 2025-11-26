@@ -1,0 +1,7 @@
+{
+	title: "Age 0 - Void Age",
+	icon: "minecraft:log",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

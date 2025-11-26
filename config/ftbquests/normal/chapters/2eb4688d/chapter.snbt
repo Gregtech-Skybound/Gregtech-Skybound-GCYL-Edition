@@ -1,0 +1,7 @@
+{
+	title: "LuV",
+	icon: "gregtech:mte 1 10019",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,7 @@
+{
+	title: "EV",
+	icon: "gregtech:mte 1 10007",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}
