@@ -1,6 +1,11 @@
 name: Build
 
 on: [push]
+permissions:
+  id-token: "write"
+  contents: "write"
+  packages: "write"
+  pull-requests: "read"
 
 jobs:
   build-dev:
@@ -41,7 +46,7 @@ jobs:
   build-master:
 
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
@@ -68,6 +73,7 @@ jobs:
     - name: Automatic Releases
       uses: marvinpinto/action-automatic-releases@v1.2.1
       with:
+          prerelease: false
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: latest
           title: "latest"
