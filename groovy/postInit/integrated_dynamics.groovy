@@ -16,6 +16,7 @@ crafting.removeByOutput(item('integratedterminals:part_terminal_crafting_job_ite
 crafting.removeByOutput(item('integrateddynamics:energy_battery'))
 crafting.removeByOutput(item('integrateddynamics:part_connector_mono_directional_item'))
 crafting.removeByOutput(item('integrateddynamics:part_connector_omni_directional_item'))
+crafting.removeByOutput(item('integrated_proxy:access_proxy'))
 
 
 crafting.addShapeless('id_storage_terminal', item('integratedterminals:part_terminal_storage_item'), [item('integrateddynamics:part_display_panel_item'), item('minecraft:crafting_table')])
@@ -69,10 +70,26 @@ crafting.addShaped('id_mono_connector', item('integrateddynamics:part_connector_
  [ore('circuitHv'), item('integrateddynamics:cable'), ore('circuitHv')],
  [ore('plateStainlessSteel'), metaitem('sensor.hv'), ore('plateStainlessSteel')]])
 
- crafting.addShaped('id_omni_connector', item('integrateddynamics:part_connector_omni_directional_item'),
-[[ore('plateTungstenSteel') , item('appliedenergistics2:material', 47), ore('plateTungstenSteel')],
- [ore('circuitIv'), item('integrateddynamics:part_connector_mono_directional_item'), ore('circuitIv')],
- [ore('plateTungstenSteel'), item('integrateddynamics:logic_director'), ore('plateTungstenSteel')]])
+mods.gregtech.assembler.recipeBuilder()
+        .inputs(item('integrateddynamics:part_connector_mono_directional_item')*2)
+        .inputs(item('integrated_proxy:access_proxy')*2)
+        .inputs(metaitem('wireless'))
+        .inputs(item('appliedenergistics2:material', 47))
+        .inputs(metaitem('sensor.luv')*16)
+        .inputs(metaitem('emitter.luv')*16)
+        .inputs(ore('circuitLuv')*32)
+        .inputs(metaitem('plateRhodiumPlatedPalladium')*16)
+        .outputs(item('integrateddynamics:part_connector_omni_directional_item')*2)
+        .EUt(2048)
+        .duration(1200)
+        .buildAndRegister()
+
+mods.gregtech.assembler.recipeBuilder()
+        .inputs(metaitem('plateRhodiumPlatedPalladium')*8, metaitem('field.generator.iv'), ore('circuitLuv')*8, metaitem('wireless'), item('integrateddynamics:variablestore')*2, item('integrateddynamics:logic_director')*8)
+        .outputs(item('integrated_proxy:access_proxy')*2)
+        .EUt(510)
+        .duration(800)
+        .buildAndRegister()
 
 mods.integrateddynamics.mechanical_squeezer.removeAll()
 mods.integrateddynamics.mechanical_drying_basin.removeAll()
