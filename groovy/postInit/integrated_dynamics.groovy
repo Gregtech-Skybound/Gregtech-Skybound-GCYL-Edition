@@ -70,6 +70,11 @@ crafting.addShaped('id_mono_connector', item('integrateddynamics:part_connector_
  [ore('circuitHv'), item('integrateddynamics:cable'), ore('circuitHv')],
  [ore('plateStainlessSteel'), metaitem('sensor.hv'), ore('plateStainlessSteel')]])
 
+crafting.replaceShaped(item('integratedtunnels:part_interface_energy_item')*2, 
+[[null, null, null],
+ [item('integrateddynamics:crystalized_menril_chunk'), metaitem('battery.re.lv.sodium'), item('integrateddynamics:crystalized_menril_chunk')],
+ [item('integrateddynamics:crystalized_menril_chunk'), item('integrateddynamics:crystalized_menril_chunk'), item('integrateddynamics:crystalized_menril_chunk')]])
+
 mods.gregtech.assembler.recipeBuilder()
         .inputs(item('integrateddynamics:part_connector_mono_directional_item')*2)
         .inputs(item('integrated_proxy:access_proxy')*2)
